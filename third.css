@@ -27,7 +27,7 @@
         background-color: rgba(0, 0, 0, 0.50);  
     }
 }
-.reviews{
+.the-reviews{
     min-height: 100vh;
     margin: 50px;
     padding: 25px;
@@ -36,6 +36,10 @@
     grid-template-rows: repeat(2);
     gap: 25px;
     border-radius: 75px;
+}
+.the-reviews img{
+    height: 50px;
+    width: 50px;
 }
 .reviews1, .reviews2, .reviews3, .reviews4, .reviews5, .reviews6 {
     display: flex;
@@ -55,10 +59,7 @@
     border: 5px solid #FFD700;
     transform: rotate(2deg) scale(1.05);
 }
-.reviews img{
-    height: 50px;
-    width: 50px;
-}
+
 .reviews1{
     grid-row: 1/2;
     grid-column: 1/2;
@@ -84,7 +85,7 @@
     grid-column: 3/4;
 }
 @media screen and (max-width: 1000px){
-    .reviews{
+    .the-reviews{
         min-height: 100vh;
         margin: 50px;
         padding: 25px;
@@ -120,7 +121,7 @@
     }    
 }
 @media screen and (max-width: 800px){
-    .reviews{
+    .the-reviews{
         min-height: 100vh;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -154,7 +155,7 @@
     }    
 }
 @media screen and (max-width: 550px){
-    .reviews{
+    .the-reviews{
         min-height: 100vh;
         margin: 10px;
         padding: 25px;
@@ -164,6 +165,19 @@
         gap: 25px;
         border-radius: 60px;
     }
+    .reviews1, .reviews2, .reviews3, .reviews4, .reviews5, .reviews6 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        border: 5px solid #dc3545;
+        border-radius: 50px;
+        align-items: center;     
+        text-align: center;
+        color: black; 
+        transition: 0.5s ease;
+        overflow: hidden;  
+        padding: 5px;   
+    } 
     .reviews1{
         grid-row: 1/2;
         grid-column: 1/2;
@@ -188,17 +202,5 @@
         grid-row: 6/7;
         grid-column: 1/2;
     }
-    .reviews1, .reviews2, .reviews3, .reviews4, .reviews5, .reviews6 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center; 
-        border: 5px solid #dc3545;
-        border-radius: 50px;
-        align-items: center;     
-        text-align: center;
-        color: black; 
-        transition: 0.5s ease;
-        overflow: hidden;  
-        padding: 5px;   
-    }   
+  
 }

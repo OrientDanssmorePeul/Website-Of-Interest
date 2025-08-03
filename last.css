@@ -25,7 +25,7 @@
         background-color: rgba(0, 0, 0, 0.50);  
     }
 }
-.first{
+.Address{
     border: 5px solid #dc3545;
     padding: 25px;
     margin: 25px;
@@ -34,10 +34,10 @@
     background-color: aliceblue;
     color: black;
 }
-.first h1{
+.Address h1{
     margin-top: 50px;
 }
-.tired{
+.info{
     background-color: aliceblue;
     border: 5px solid #dc3545;
     padding: 10px;

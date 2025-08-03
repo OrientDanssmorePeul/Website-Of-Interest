@@ -51,6 +51,16 @@
     transition: 1s ease;
     padding: 5px;
 }
+.this1:hover .prev1,.this2:hover .prev2,.this3:hover .prev3,.this4:hover .prev4,.this5:hover .prev5,.this6:hover .prev6{
+    transform: scale(1.05);
+    width: 200%;
+    height: 100%;
+}
+.this1:hover,.this2:hover,.this3:hover,.this4:hover,.this5:hover,.this6:hover{
+    transform: scale(1.1);
+    background-color: white;
+    z-index: 2;
+}
 .this1{
     grid-column: 1/2;
     grid-row: 1/2;
@@ -80,8 +90,8 @@
 }
 .prev1 img,.prev2 img,.prev3 img,.prev4 img,.prev5 img,.prev6 img{
     object-fit: cover;
-    height: 300px;
-    width: 400px;
+    height: 100%;
+    width: 100%;
 }
 .prev1,.prev2,.prev3,.prev4,.prev5,.prev6{
     overflow: hidden;
@@ -89,17 +99,9 @@
     width: 0px;
     border-radius: 0px 5px 5px 0px;
     transition: 1s ease;
+    border-radius: 20px;
 }
-.this1:hover .prev1,.this2:hover .prev2,.this3:hover .prev3,.this4:hover .prev4,.this5:hover .prev5,.this6:hover .prev6{
-    transform: scale(1.1);
-    width: 1500px;
-    height: 300px;
-}
-.this1:hover,.this2:hover,.this3:hover,.this4:hover,.this5:hover,.this6:hover{
-    transform: scale(1.1);
-    background-color: white;
-    z-index: 2;
-}
+
 @media screen and (max-width: 1200px) {
     .type{
         padding: 50px;
@@ -139,7 +141,7 @@
 }
 @media screen and (max-width: 700px) {
     .this1:hover .prev1,.this2:hover .prev2,.this3:hover .prev3,.this4:hover .prev4,.this5:hover .prev5,.this6:hover .prev6{
-        transform: scale(1.1);
+        transform: scale(1.05);
         width: auto;
         height: 250px;
     }
@@ -193,7 +195,7 @@
 }
 @media screen and (max-width: 530px) {
     .this1:hover .prev1,.this2:hover .prev2,.this3:hover .prev3,.this4:hover .prev4,.this5:hover .prev5,.this6:hover .prev6{
-        transform: scale(1.1);
+        transform: scale(1.05);
         width: auto;
         height: 250px;
     }
