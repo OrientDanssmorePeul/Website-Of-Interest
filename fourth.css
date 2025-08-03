@@ -1,0 +1,173 @@
+.fourth{
+    color: aliceblue;
+    word-break: normal;
+}
+.bg-layout4{
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.50);
+    animation: thisBlock 9s linear infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+@keyframes thisBlock{
+    0%{
+        background-color: rgba(0, 0, 0, 0.50);
+    }
+    25%{
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+    50%{
+        background-color: rgba(0, 0, 0, 1);
+    }
+    75%{
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+    100%{
+        background-color: rgba(0, 0, 0, 0.50);  
+    }
+}
+.promotion{
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgba(77, 77, 77, 0.5);
+    min-width: 90vw;
+    min-height: 90vh;
+    overflow: hidden;
+    pointer-events: none;
+}
+.boat{
+    position: absolute;
+    opacity: 0;
+    transition: 1s ease;
+    animation: boat 5s linear infinite;
+    display: flex;
+    justify-self: right;
+}
+.plane{
+    position: absolute;
+    opacity: 0;
+    transition: 1s ease;
+    animation: plane 5s linear infinite;
+    display: flex;
+    justify-self: center;
+}
+.car{
+    position: absolute;
+    opacity: 0;
+    transition: 1s ease;    
+    animation: car 5s linear infinite;
+}
+.oi{
+    margin-top: 5%;
+    text-align: center;
+    transition: 1s;
+}
+.bg-layout4:hover .plane{
+    opacity: 1;
+    transform: scale(1.15);
+}
+.bg-layout4:hover .car{
+    opacity: 1;
+    transform: scale(1.15);
+}
+.bg-layout4:hover .boat{
+    opacity: 1;
+    transform: scale(1.15);
+}
+.bg-layout4:hover .oi{
+    transform: scale(1.2);
+    font-style: italic;
+    font-weight: bolder;
+    z-index: 99;
+}
+@media screen and (max-width: 1050px){
+    .bg-layout4:hover .plane{
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    .bg-layout4:hover .car{
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    .bg-layout4:hover .boat{
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}
+@media screen and (max-width: 610px){
+    .bg-layout4:hover .plane{
+        opacity: 0.3;
+        transform: scale(0.9);
+    }
+    .bg-layout4:hover .car{
+        opacity: 0.3;
+        transform: scale(0.9);
+        display: flex;
+        justify-self: center;
+        align-self: flex-end;
+    }
+    .bg-layout4:hover .boat{
+        opacity: 0.3;
+        transform: scale(0.9);
+    }
+    .bg-layout4:hover .oi{
+        transform: scale(1.10);
+        font-style: italic;
+        font-weight: bolder;
+        z-index: 99;
+    }  
+    .promotion{
+        position: absolute;
+        background-color: rgba(77, 77, 77, 0.5);
+        min-width: 90vw;
+        min-height: 90vh;
+        overflow: hidden;
+        pointer-events: none;
+    }
+    .boat{
+        position: absolute;
+        top: 10%;
+        opacity: 0;
+        transition: 1s ease;
+        animation: boat 5s linear infinite;
+        display: flex;
+        justify-self: center;
+    }
+    .plane{
+        position: absolute;
+        opacity: 0;
+        top: 40%;
+        transition: 1s ease;
+        animation: plane 5s linear infinite;
+        display: flex;
+        justify-self: center;
+    }
+    .car{
+        position: absolute;
+        top: 60%;
+        opacity: 0;
+        transition: 1s ease;    
+        animation: car 5s linear infinite;
+        display: flex;
+        justify-self: center;
+    }
+}
+@media screen and (max-width: 450px){
+    .bg-layout4:hover .oi{
+        transform: scale(1.05);
+        font-style: italic;
+        font-weight: bolder;
+        z-index: 99;
+    }   
+}
+@media screen and (max-width: 340px){
+    .bg-layout4:hover .oi{
+        transform: scale(1.025);
+        font-style: italic;
+        font-weight: bolder;
+        z-index: 99;
+    }     
+}

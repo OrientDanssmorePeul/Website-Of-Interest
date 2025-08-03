@@ -1,0 +1,35 @@
+footer{
+    background-color: white;
+    border: 2.5px solid #dc3545;
+    border-radius: 5px;
+    min-height: 12.5vh;
+
+}
+.skibidi{
+    display: flex;
+    margin-right: 20px;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+}
+.yo{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.hey{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+hr{
+    display: flex;
+    justify-self: center;
+    width: 97.5%;
+}
+@media screen and (max-width:475px){
+    .yo ,.skibidi{
+        font-size: 10px;
+    }
+}
